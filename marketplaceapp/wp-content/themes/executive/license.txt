@@ -1,0 +1,25 @@
+Executive WordPress Theme, Copyright 2016 Diverse Themes https://diversethemes.com/
+Executive WordPress Theme is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+Executive WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
+Underscores WordPress Theme is distributed under the terms of the GNU GPL
+
+Executive WordPress Theme bundles the following third-party resources:
+
+Executive, like WordPress, is licensed under the GPL.
+Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Font Icons by Font Awesome: http://fontawesome.io
+Genericons by Automattic, Inc. http://genericons.com/
+
+Header image and demo images are from Unsplash.com
