@@ -1,0 +1,10 @@
+li#accordion-section-support_links .button-secondary {
+    background: #ff0808;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+li#accordion-section-support_links {
+    display: block !important;
+}

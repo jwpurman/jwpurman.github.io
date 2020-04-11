@@ -1,0 +1,37 @@
+<?php
+if (! class_exists ( 'WC_Payment_Gateway_Stripe_Local_Payment' )) {
+	return;
+}
+/**
+ *
+ * @package Stripe/Gateways
+ * @author PaymentPlugins
+ *        
+ */
+class WC_Payment_Gateway_Stripe_Sepa extends WC_Payment_Gateway_Stripe_Local_Payment {
+
+	use WC_Stripe_Local_Payment_Charge_Trait;
+	
+	public function __construct() {
+		$this->synchronous = false;
+		$this->local_payment_type = 'sepa_debit';
+		$this->currencies = [ 'EUR' 
+		];
+		$this->id = 'stripe_sepa';
+		$this->tab_title = __ ( 'SEPA', 'woo-stripe-payment' );
+		$this->template_name = 'local-payment.php';
+		$this->token_type = 'Stripe_Local';
+		$this->method_title = __ ( 'Sepa', 'woo-stripe-payment' );
+		$this->method_description = __ ( 'Sepa gateway that integrates with your Stripe account.', 'woo-stripe-payment' );
+		$this->icon = wc_stripe ()->assets_url ( 'img/sepa.svg' );
+		$this->order_button_text = __ ( 'SEPA', 'woo-stripe-payment' );
+		parent::__construct ();
+	}
+
+	public function get_element_params() {
+		return array_merge ( parent::get_element_params (), [ 
+				'supportedCountries' => [ 'SEPA' 
+				] 
+		] );
+	}
+}

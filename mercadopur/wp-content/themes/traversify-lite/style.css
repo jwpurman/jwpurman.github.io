@@ -1,0 +1,1401 @@
+/*!
+Theme Name: Traversify Lite
+Theme URI: https://codethemes.co/theme/traversify-lite
+Author: Code Themes
+Author URI: https://codethemes.co/
+Description: Traversify lite is a free travel WordPress theme built for travels, adventures, tour planners as well as tourist guides. Besides that, these WordPress themes can be applicable for adventure blogs, tourists destination, travel magazines and many more. It integrates WP travel engine plugins that allow the user to book the travel packages easily and display them in a clean, attractive way. Traversify is fully responsive, SEO friendly and cross-browser compatible. The WordPress travel agency theme is translation ready as it is very important for the travel industry to be able to communicate in different languages. This WordPress theme is made from scratch to meet the WordPress standards.
+Version: 1.1.6
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: traversify-lite
+Tags: holiday, portfolio, one-column, two-columns, right-sidebar, grid-layout, footer-widgets, flexible-header, custom-background, custom-colors, custom-header, custom-menu, left-sidebar, custom-logo, editor-style, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+
+Traversify Lite WordPress Theme, Copyright 2018 Code Themes
+Traversify Lite is distributed under the terms of the GNU GPL
+
+Traversify Lite is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+
+
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+a:visited {
+    color: #84a016;
+}
+.nav-wrapper .dropdown:hover .dropdown-menu,.nav-wrapper .dropdown:focus .dropdown-menu,.nav-wrapper .dropdown:focus-within .dropdown-menu {
+    display: block !important;
+}
+.nav-wrapper .navbar .nav li > a:focus {
+    background: #f5f5f5;
+}
+.header .nav-wrapper .navbar .nav li > a:focus-within {
+    background:  #f5f5f5 !important;
+}
+a:focus-within {
+    text-decoration: underline !important;
+}
+
+
+
+
+
+.wpte-bf-checkout .wpte-bf-summary-wrap{
+    background: #FFF;
+    border: none;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-trip-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-trip-date{
+    font-size: 16px;
+    color: #232323;
+    display: block;
+    margin-top: 10px;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-trip-name-wrap{
+    border-bottom: none;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table{
+    overflow: hidden;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tfoot td{
+    text-align: right !important;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table,
+.wpte-bf-checkout .wpte-bf-summary-wrap table tr{
+    border: none !important;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tr td{
+    padding: 10px 0 !important;
+    color: #232323;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tr td:last-child{
+    text-align: right !important;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tbody{
+    padding-bottom: 10px;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tfoot{
+    border-top-color: #ffab44;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap table tfoot td{
+    padding-top: 20px !important;
+}
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tr:last-child{
+     padding-bottom: 10px;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tfoot tr td .wpte-bf-currency,
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tfoot tr td .wpte-bf-price-amt{
+     color: #232323;
+     font-weight: 600;
+     font-size: 20px;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tr td{
+     border: none !important;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tr td b{
+     color: #232323;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tbody tr:last-child td{
+     padding-bottom: 20px !important;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tbody tr td:first-child{
+     font-size: 16px;
+     text-align: left !important;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tbody tr td:first-child span{
+     position: relative;
+     background: #FFF;
+     padding-right: 20px;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tbody tr td b{
+    background: #FFF;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+ }
+ .wpte-bf-checkout .wpte-bf-summary-wrap table tbody tr td:first-child span:after{
+     position: absolute;
+     content: "";
+     width: 500px;
+     height: 1px;
+     border: 1px dashed rgba(0,0,0,0.1);
+     top: 10px;
+     left: 100%;
+ }
+
+.wpte-bf-booking-steps .wpte-bf-step-wrap{
+    background: transparent;
+    border-bottom: solid 1px #84a016;
+    padding: 25px 15px 15px;
+}
+.wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step{
+    text-transform: capitalize;
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap{
+    padding-bottom: 30px;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step.completed::before{
+    background-color: rgba(92,124,251, 0.1);
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%235c7cfb" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>');
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step::after{
+    background-color: rgba(92,124,251, 0.1);
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step.active::after{
+    background-color: #84a016;
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step.active::before{
+    background-color: #84a016;
+}
+.wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step::before{
+    color: #84a016;
+    border-color: rgba(92,124,251, 0.1);
+}
+.wpte-bf-checkout .wpte-bf-radio .wpte-bf-radio-wrap input[type="radio"]:checked + label::before,
+.wpte-bf-checkbox .wpte-bf-checkbox-wrap input[type="checkbox"]:checked + label::before{
+    background-color: #84a016;
+    border-color: #84a016;
+}
+.wpte-bf-step-content-wrap .wpte-bf-btn-wrap input.wpte-bf-btn,
+.wpte-bf-submit input[type="submit"]{
+    -webkit-border-radius: 28px;
+            border-radius: 28px;
+    background:  #84a016;
+    border: 1px solid  #84a016;
+}
+.wpte-bf-step-content-wrap .wpte-bf-btn-wrap input.wpte-bf-btn:hover,
+.wpte-bf-submit input[type="submit"]:hover,
+.wpte-bf-step-content-wrap .wpte-bf-btn-wrap input.wpte-bf-btn:focus,
+.wpte-bf-submit input[type="submit"]:focus{
+    color: #84a016;
+    background: none;
+}
+.wpte-bf-checkbox .wpte-bf-checkbox-wrap a{
+    color: #84a016;
+}
+.wpte-bf-toggle-wrap .wpte-bf-toggle-title{
+    color: #FFF;
+    text-transform: capitalize;
+    background: #84a016;
+}
+.wpte-bf-toggle-wrap .wpte-bf-toggle-title:hover{
+    background: #84a016;
+}
+.wpte-bf-booking-steps{
+    margin-top: 0;
+}
+.wpte-bf-help-block{
+    background: #FFF;
+    border-top: 1px solid rgba(92,124,251, 0.2);
+}
+.wpte-bf-help-block a{
+    margin-left: 2px;
+}
+.wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step.active{
+    color: #84a016;
+    font-size: 14px;
+}
+.wpte-bf-help-block a{
+    color: #84a016;
+}
+.wpte-bf-price-wrap{
+    padding: 0;
+    text-align: center;
+    /*background: rgba(92,124,251, 0.08);*/
+    border-color: rgba(92,124,251, 0.05);
+    /*-webkit-box-shadow: 0px 0px 32px rgba(0,0,0,0.08);
+            box-shadow: 0px 0px 32px rgba(0,0,0,0.08);
+*/}
+.wpte-bf-price-wrap .wpte-bf-price{
+    -ms-word-break: break-word;
+        word-break: break-word;
+    text-align: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+}
+.wpte-bf-price-wrap .wpte-bf-ptitle{
+    margin-top: 10px;
+}
+.wpte-bf-price-wrap .wpte-bf-price:last-child{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: rgba(92,124,251, 0.08);
+}
+.wpte-bf-price-wrap .wpte-bf-price del{
+    color: #84a016;
+    font-size: 16px;
+    font-weight: 500;
+}
+.wpte-bf-price-wrap .wpte-bf-price ins{
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #111;
+}
+.wpte-bf-price-wrap .wpte-bf-price ins b{
+    padding-left: 0;
+    font-weight: 800;
+}
+.wpte-bf-price-wrap .wpte-bf-price .wpte-bf-pqty{
+    padding-left: 0;
+}
+.wpte-bf-step-content-wrap .wpte-bf-toggle-content table tr td .wpte-bf-info{
+    color: rgba(0,0,0,0.7);
+}
+.wpte-bf-step-content-wrap .wpte-bf-toggle-content table tr td{
+    -ms-word-break: break-word;
+    word-break: break-word;
+    font-size: 16px;
+    font-weight: 500;
+}
+.wpte-bf-step-content-wrap .wpte-bf-toggle-content table tr td:last-child{
+    font-weight: 600;
+}
+.wpte-bf-toggle-wrap .wpte-bf-toggle-title{
+    background: #84a016;
+}
+.wte-bf-price-detail .wpte-bf-toggle-wrap .wpte-bf-toggle-title{
+    background: rgba(92,124,251, 0.1);
+    color: #84a016;
+}
+.wpte-bf-toggle-wrap .wpte-bf-toggle-title:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.wpte-bf-step-content .wpte-bf-number-field button:hover{
+    color: #84a016;
+}
+.wpte-bf-step-content-wrap .wpte-bf-btn-wrap input.wpte-bf-btn:focus,
+.wpte-bf-submit input[type="submit"]:focus,
+.wpte-bf-step-content .wpte-bf-number-field button:focus{
+    outline: none;
+}
+.wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step-arrow{
+    color: rgba(51,51,51,0.25);
+}
+.wpte-bf-datepicker .ui-datepicker-inline .ui-widget-header{
+    background: rgba(92,124,251, 0.07);
+    padding: 13px 0;
+    border-bottom: none;
+}
+.wpte-bf-datepicker .ui-datepicker-inline .ui-datepicker-title{
+    font-weight: 600;
+    font-size: 15px !important;
+}
+.wpte-bf-step-content .wpte-bf-number-field + span{
+    font-size: 14px;
+}
+.wpte-bf-step-content .wpte-bf-price ins{
+    color: #84a016;
+}
+.wpte-bf-step-content .wpte-bf-price ins b{
+    font-size: 18px;
+    font-weight: 700;
+}
+.wpte-bf-step-content .wpte-bf-price .wpte-bf-pqty{
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: lowercase;
+}
+.wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-currency,
+.wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-price-amt{
+    color: #84a016;
+}
+.wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-total-txt{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(35,35,35,0.8);
+}
+.wpte-bf-checkout .wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-total-txt{
+    font-size: 16px;
+    padding-right: 0;
+}
+.wpte-bf-step-content .wpte-bf-number-field{
+    border: 1px solid rgba(92,124,251, 0.4);
+    width: 100px;
+    height: 40px;
+}
+.wpte-bf-step-content .wpte-bf-number-field button{
+    color: #84a016;
+    background: rgba(92,124,251, 0.03);
+    border: solid 1px rgba(92,124,251, 0.05);
+}
+.wpte-bf-step-content-wrap .wpte-bf-toggle-content .wpte-bf-total{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.wpte-bf-step-content-wrap .wpte-bf-toggle-content .wpte-bf-total b{
+    color: #84a016;
+}
+.wpte-bf-checkout .wpte-bf-summary-total{
+    padding: 5% 0;
+    margin-top: 30px;
+    background: none;
+    border-top: 1px solid #84a016;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-title,
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-trip-name-wrap{
+    text-align: left;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-trip-name-wrap{
+    margin-bottom: 10px;
+}
+.wpte-bf-checkout .wpte-bf-summary-wrap .wpte-bf-title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-currency,
+.wpte-bf-step-content-wrap .wpte-bf-total-price .wpte-bf-price-amt{
+    color: #84a016;
+    font-size: 26px;
+}
+.wpte-bf-checkout .wpte-bf-step-content-wrap .wpte-bf-total-price{
+    text-align: right;
+}
+.wpte-bf-outer input[type="text"], .wpte-bf-outer input[type="email"], .wpte-bf-outer input[type="url"], .wpte-bf-outer input[type="password"], .wpte-bf-outer input[type="search"], .wpte-bf-outer input[type="number"], .wpte-bf-outer input[type="tel"], .wpte-bf-outer input[type="range"], .wpte-bf-outer input[type="date"], .wpte-bf-outer input[type="month"], .wpte-bf-outer input[type="week"], .wpte-bf-outer input[type="time"], .wpte-bf-outer input[type="datetime"], .wpte-bf-outer input[type="datetime-local"], .wpte-bf-outer input[type="color"], .wpte-bf-outer textarea, .wpte-bf-outer select{
+    background: none;
+}
+.wpte-bf-outer {
+    box-shadow: 0 0 12px rgba(0,0,0,0.07);
+    margin-bottom: 60px;
+}
+.wpte-bf-outer.wpte-bf-checkout{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.wpte-bf-booking-steps{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.wpte-bf-datepicker .ui-datepicker td a.ui-state-default{
+    background: #84a016;
+    color: #FFF;
+}
+.wpte-bf-toggle-wrap .wpte-bf-toggle-content{
+    padding: 0 20px;
+}
+
+.wpte-bf-checkout .wpte-bf-checkout-form{
+    width: 60%;
+}
+.wpte-bf-checkout .wpte-bf-book-summary{
+    width: 40%;
+}
+body.rightsidebar .wpte-bf-checkout .wpte-bf-checkout-form,
+body.leftsidebar .wpte-bf-checkout .wpte-bf-checkout-form{
+    width: 50%;
+}
+body.rightsidebar .wpte-bf-checkout .wpte-bf-book-summary,
+body.leftsidebar .wpte-bf-checkout .wpte-bf-book-summary{
+    width: 50%;
+}
+.wpte-bf-checkout .wpte-bf-book-summary{
+    padding: 45px 60px;
+    -webkit-box-shadow: 0px 0px 42px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 42px rgba(0,0,0,0.05);
+}
+body.rightsidebar .wpte-bf-checkout .wpte-bf-book-summary,
+body.leftsidebar .wpte-bf-checkout .wpte-bf-book-summary{
+    padding: 20px 20px 10px;
+}
+body.rightsidebar .wpte-bf-checkout .wpte-bf-step-content-wrap .wpte-bf-total-price,
+body.leftsidebar .wpte-bf-checkout .r-bf-step-content-wrap .wpte-bf-total-price{
+    text-align: right;
+}
+.wpte-bf-checkout .wpte-bf-summary-total .wpte-bf-currency,
+.wpte-bf-checkout .wpte-bf-summary-total .wpte-bf-price-amt{
+    color: #232323;
+    font-size: 24px;
+    font-weight: 600;
+}
+.wpte-bf-datepicker .ui-datepicker-inline .ui-widget-header a[class*="ui-datepicker-"]{
+    bottom: 7px;
+}
+#nestable1 .dd-list table td span{
+    padding-left: 5px;
+}
+.wpte-bf-step-content .wpte-bf-block-title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.wpte-bf-step-content .ui-datepicker table{
+    font-size: 14px !important;
+}
+.wpte-bf-datepicker .ui-datepicker th{
+    font-size: 13px;
+}
+
+body.rightsidebar .wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step:first-of-type,
+body.leftsidebar .wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step:first-of-type{
+    margin-left: 0;
+}
+body.rightsidebar .wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step,
+body.leftsidebar .wpte-bf-checkout .wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step{
+    padding-left: 35px;
+}
+.single-trip #wte_enquiry_contact_form select{
+    font-size: 16px;
+    color: #6f6f6f;
+    padding: 0 10px;
+}
+.single-trip #secondary {
+    margin-top: 70PX;
+}
+.wpte-bf-price-wrap .wpte-bf-ptitle {
+    margin-top: 10px;
+    font-size: 21px;
+}
+.ui-datepicker.ui-widget .ui-datepicker-header .ui-datepicker-title {
+    font-family: Raleway;
+}
+.single-trip #primary {
+    padding-right: 40px;
+}
+.wte-trip-facts {
+    background: #f5f5f5;
+    padding: 25px;
+}
+.wpte-bf-help-block {
+    background: #FFF;
+    border-top: 1px solid #eee;
+}
+header#top.header {
+    z-index: 99;
+}
+table.ui-datepicker-calendar {
+    font-family: Raleway;
+}
+.wpte-bf-step-content .wpte-bf-number-field {
+    border: 1px solid #eee;
+    width: 100px;
+    height: 32px;
+}
+.wpte-bf-step-content .wpte-bf-price ins {
+    margin-bottom: 0;
+}
+table.wpte-bf-travellers-price-table, table.wpte-bf-travellers-price-table td {
+    border: none !important;
+}
+.sidebar .advanced-search-field h3 {
+    display: block;
+}
+
+.ui-datepicker.ui-widget {
+    box-shadow: none;
+    border: none;
+}
+.wpte-bf-datepicker {
+    padding: 0;
+}
+.wpte-bf-datepicker .ui-datepicker-inline .ui-widget-header {
+    background: none;
+}
+.wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step.active {
+    color: #84a016 !important;
+    font-size: 14px;
+}
+.wpte-bf-booking-steps .wpte-bf-step-wrap .wpte-bf-step {
+    color: #333 !important;
+}
+
+
+
+
+
+
+.wp-travel-toolbar .wte-filterby-dropdown .wte-ordering span {
+    display: block;
+    position: relative;
+    top: -15px;
+}
+.archive .trip-content-area header.page-header {
+    display: block;
+}
+.category-trips-single .category-trips-single-inner-wrap .category-trip-detail-wrap .category-trip-desti .category-trip-loc {
+    margin-bottom: 20px;
+}
+.category-list .category-trips-single-inner-wrap .category-trip-aval-time .category-trip-viewmre-btn {
+    background: #84a016;
+    color: #fff;
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The7 | Quick Start Guide</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.container {
+	max-width: 980px;
+}
+.group {
+	padding: 10px 0 60px 0;
+}
+	.group:first-child {
+		padding-top: 50px;
+	}
+	.group:last-child {
+		min-height: 100vh;
+	}
+
+.subgroup {
+	padding-top: 10px;
+}
+figure {
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+figure img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+/* sidebar */
+.bs-docs-sidebar > .nav {
+
+}
+.bs-docs-sidebar > .nav.affix {
+    top: 40px;
+}
+
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav > li > a {
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 14px;
+    color: #676b6d;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #0ca2e0; 
+}
+/* all active links */
+.bs-docs-sidebar .nav .active > a, 
+.bs-docs-sidebar .nav .active:hover > a,
+.bs-docs-sidebar .nav .active:focus > a {
+    font-weight: bold;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;           
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;           
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<!--Main Content -->
+		<div class="col-xs-9 bs-docs-content" role="main">
+			<section id="introduction" class="group">
+				<h2>Thank you for choosing The7!</h2>
+
+				<p>In this Quick Start Guide you will find all required information on how to <a href="#theme">install the theme</a> and bundled <a href="#plugins">plugins</a>, <a href="#troubleshooting">troubleshoot</a> most common issues and make your site look like the <a href="#demo">theme demo</a>.</p>
+
+				<p>For detailed information on theme usage please visit <a href="http://guide.the7.io/" target="_blank">The7 online user guide</a>.</p>
+
+				<p>Furthermore you can use <a href="http://support.dream-theme.com/troubleshooter/" target="_blank">Troubleshooter</a> and <a href="http://support.dream-theme.com/knowledgebase/" target="_blank">Knowledge Base</a> at our <a href="http://support.dream-theme.com/" target="_blank">Support Portal</a>.</p>
+
+				<p>The7 comes with complimentary support. So when all else fails, please do not hesitate to submit a support request via our <a href="http://support.dream-theme.com/" target="_blank">online Help-Desk</a>. Our support policy is available on <a href="http://support.dream-theme.com/support-policy/" target="_blank">this page</a>.</p>
+
+				<p>&nbsp;</p>
+
+				<p><em>We hope you will enjoy working with The7.<br>
+				Yours sincerely, Dream-Theme.</em></p>
+			</section>
+
+			<section id="before" class="group">
+				<h2>Before Getting Started</h2>
+
+				<p>Due to the amount of features, settings and options available in The7, at first you may find it to be a bit overwhelming (compared to a usual "blog" themes).</p>
+
+				<p>For super-easy adaptation, we recommend using <a href="#wizard">Theme Options Wizard</a> and avoid advanced settings. Very soon you will get the idea behind the theme architecture and will be able to use The7 to its full potential.</p>
+
+				<p>Also note, that this Quick Start Guide does not cover basic WordPress usage. If you are a WordPress newbie, please get accustomed with it before proceeding with this manual and the theme!</p>
+
+				<p>Here are some links that will help you to become more confident with WordPress:</p>
+
+				<ul>
+					<li>First Steps with WordPress (this is one of most complete guides):&nbsp;<a href="http://codex.wordpress.org/First_Steps_With_WordPress" target="_blank">http://codex.wordpress.org/First_Steps_With_WordPress</a></li>
+					<li>Explanations on most common WordPress terms:&nbsp;<a href="http://en.support.wordpress.com/lexicon/" target="_blank">http://en.support.wordpress.com/lexicon/</a></li>
+					<li>Best WordPress-related articles for Web Developers (from novices to guru):&nbsp;<a href="http://net.tutsplus.com/articles/web-roundups/top-50-wordpress-tutorials/" target="_blank">http://net.tutsplus.com/articles/web-roundups/top-50-wordpress-tutorials/</a></li>
+					<li>Make sure you understand <a href="http://codex.wordpress.org/Pages" target="_blank">Pages</a>, <a href="http://codex.wordpress.org/Writing_Posts" target="_blank">Posts</a>, <a href="http://codex.wordpress.org/WordPress_Menu_User_Guide" target="_blank">Menus</a>, <a href="http://codex.wordpress.org/WordPress_Widgets" target="_blank">Widgets</a>, <a href="http://codex.wordpress.org/Plugins" target="_blank">Plugins </a> etc.</li>
+				</ul>
+
+				<div class="alert alert-warning" role="alert"><strong>Seriously.</strong> If you do not want to spoil your experience with any WordPress theme, get accustomed with <a href="http://codex.wordpress.org/First_Steps_With_WordPress" target="_blank">WordPress basics</a> first! :)</div>
+			</section>
+
+			<section id="theme" class="group">
+				<h2>Theme Installation</h2>
+				<p>Before proceeding, please make sure that following plugins are not installed or deactivated:</p>
+				<ul>
+					<li>WP-pagenavi;</li>
+					<li>WP-less;</li>
+					<li>Options Framework;</li>
+					<li>any plugin that uses <strong>tgmpa</strong> (TGM Plugin Activation) and <strong>lessc</strong> (lessPHP) classes.</li>
+				</ul>
+				<p>If you've downloaded and unzipped the full theme package, locate the theme installation file called "dt-the7_v.X.X.X.zip" (where "X.X.X" is the theme version).</p>
+				<p>Alternatively you can download the installable WordPress file from "Downloads" tab of your ThemeForest account (fig. 1):</p>
+				<figure>
+					<img src="assets/images/download.png" alt="Downloading installable file">
+					<figcaption>Fig. 1 - Downloading installable file.</figcaption>
+				</figure>
+				<div class="alert alert-success" role="alert"><p>Don't forget to download the "License certificate &amp; purchase code" file. You will need the <strong>purchase code</strong> later to activate the theme.</p></div>
+
+				<div id="admin" class="subgroup">
+					<h3>Uploading theme via WordPress admin panel</h3>
+					<ol>
+						<li>Log in to the WordPress admin area.</li>
+						<li>Navigate to <strong>Appearance > Themes</strong>.</li>
+						<li>Select the "Add New" (fig. 2.1):
+							<figure>
+								<img src="assets/images/upload_1.jpg" alt="Uploading theme">
+								<figcaption>Fig. 2.1 - Uploading theme.</figcaption>
+							</figure>
+						</li>
+						<li>Use the "Upload" button to upload the installable "dt-the7_v.X.X.X.zip" file, that you have previously downloaded to your computer (fig. 2.2):
+							<figure>
+								<img src="assets/images/upload_2.jpg" alt="Uploading theme">
+								<figcaption>Fig. 2.2 - Uploading theme.</figcaption>
+							</figure>
+						</li>
+						<li>Follow the instructions below to activate the theme.</li>
+					</ol>
+					<div class="alert alert-warning" role="alert">
+						<p><strong>If you were not able to install the theme</strong> this way, most probably your server has upload file size limit. The theme installable .zip file is too large to be uploaded via WordPress admin area. You can contact your hosting provider and ask to ease this limit (e.g 16 MB will do).</p>
+						<p>Alternatively you can read on to learn how to install the theme manually.</p>
+					</div>
+				</div>
+
+				<div id="cpanel" class="subgroup">
+					<h3>Uploading theme via cPanel</h3>
+					<p>If your host offers the cPanel control panel, follow these instructions:</p>
+					<ol>
+						<li>In cPanel File Manager, navigate to your "themes" folder. If your WordPress is installed in the document root folder of your web server you would navigate to "public_html/wp-content/themes" and if you have WordPress installed in a sub-folder called "wordpress", you would navigate to "public_html/wordpress/wp-content/themes".</li>
+						<li>Once you've navigated to the "themes" folder in cPanel File Manager, click on Upload file(s) and upload the installable .zip file.</li>
+						<li>Once the .zip file is uploaded, click on it in cPanel, then in the panel to the right, click on "Extract File Contents", and that .zip file will be uncompressed.</li>
+						<li>Follow the instructions below to activate the theme.</li>
+					</ol>
+				</div>
+
+				<div id="ftp" class="subgroup">
+					<h3>Uploading theme via FTP</h3>
+					<p>To add a theme via FTP, follow these basic steps:</p>
+					<ol>
+						<li>Unzip the installable file. You need to preserve the directory structure in the archive when unzipping it.</li>
+						<li>Using an FTP client to access your host web server, upload the theme folder ("dt-the7") via FTP into "wp-content/themes/" folder.</li>
+						<li>Follow the instructions below to activate the theme.</li>
+					</ol>
+				</div>
+
+				<div id="activate" class="subgroup">
+					<h3>Activate the theme</h3>
+					<p>To activate The7:</p>
+					<ol>
+						<li>Navigate to <strong>Appearance > Themes</strong>.</li>
+						<li>From the Themes panel, move the cursor over The7 thumbnail image to see actions available for it:
+							<figure>
+								<img src="assets/images/activate.jpg" alt="Activating The7">
+								<figcaption>Fig. 3 - Activating The7.</figcaption>
+							</figure>
+						</li>
+						<li>You can view more information about any theme by clicking the "Theme Details".</li>
+						<li>A live preview of The7 theme (using your website's content) can be seen by clicking the "Live Preview".
+							<div class="alert alert-warning" role="alert"><p><strong>Attention!</strong> If the theme preview is blank, do not activate The7! Please refer to <a href="#blank">this section</a> of Quick Start Guide to resolve the issue. Otherwise, your site will not be displayed correctly.</p></div>
+						</li>
+						<li>To activate the theme click the "Activate" button.</li>
+					</ol>
+				</div>
+			</section>
+
+			<section id="troubleshooting" class="group">
+				<h2>Troubleshooting</h2>
+
+				<div id="cannot-upload" class="subgroup">
+					<h3>Cannot upload the theme</h3>
+					<figure>
+						<img src="assets/images/cannot-upload.png" alt="Cannot upload the theme">
+						<figcaption>Fig. 4 - Cannot upload the theme.</figcaption>
+					</figure>
+
+					<p>If you were not able to install the theme via "Appearance > Themes" interface (see fig. 4 above), most probably your server has upload file size limit. The theme installable .zip file is too large to be uploaded via WordPress admin area. You can contact your hosting provider and ask to ease this limit (e.g 16 MB will do) or install the theme <a href="#cpanel">manually</a>.</p>
+				</div>
+
+				<div id="missing" class="subgroup">
+					<h3>Missing the style.css stylesheet</h3>
+					<figure>
+						<img src="assets/images/missing.png" alt="Theme is missing the style.css stylesheet">
+						<figcaption>Fig. 5 - Theme is missing the style.css stylesheet.</figcaption>
+					</figure>
+					<p>A common issue that can occur with users new to installing WordPress themes is a "Broken theme and/or stylesheets missing" error message being displayed when trying to upload or activate the theme. This error message does not mean that the theme is broken, it simply means that you are uploading the wrong file.</p>
+					<p>Please make sure that file you are uploading the installable file. It is called something like "dt-the7_v.X.X.X.zip". Please refer to <a href="#theme">this</a> section of guide for details.</p>
+				</div>
+				
+				<div id="blank" class="subgroup">
+					<h3>Blank page / allowed memory size error after The7 activation</h3>
+					<p>Blank page on theme preview or after theme activation, in most cases, is the indication of the so-called <strong>memory limit issue</strong>. It's the same issue when you're getting the "Allowed memory size of xxxxxxxx bytes exhausted" error. Here's how to solve it:</p>
+					<p>First and foremost, try to edit the "wp-config.php" file in the root of you WordPress installation. Search for <code>'WP_MEMORY_LIMIT'</code>. If there is such setting, set the limit to <code>'256MB'</code>. If there's no such setting, add this bit of code before the MySQL settings <code>define( 'WP_MEMORY_LIMIT', '256M' );</code>. Also make sure there's no <code>'WP_MAX_MEMORY_LIMIT'</code> setting in "wp-config.php" file; or make sure it is not less then <code>'256MB'</code>.</p>
+					<p>Second, if editing "wp-config.php" did not help, try to add this bit of code in the beginning of ".htaccess" file: <code>php_value memory_limit 256M</code>.</p>
+					<p>Third, if you get the error even after completing both steps above, it may be that your PHP is configured in CGI or suPHP. In this case instead of ".htaccess", you should create a file called "php.ini" and place this bit of code in it: <code>memory_limit = 256M</code>.</p>
+					<div class="alert alert-warning" role="alert"><p>If above steps did not yield any result, please don't hesitate to contact your hosting company support department. Since this is most likely a server-related problem, we will not be able to help you.</p></div>
+				</div>
+
+				<div id="chmod" class="subgroup">
+					<h3>Failed to create customization .CSS file</h3>
+					<figure>
+						<img src="assets/images/chmod.png" alt="CHMOD issue">
+						<figcaption>Fig. 6 - CHMOD issue.</figcaption>
+					</figure>
+					<p>Theme will work fine on the vast majority of correctly installed and configured WordPress sites without any additional setup. However on some (very rear) hosting configurations you can notice that images on your site are not uploading/displaying or theme returns notifications about setting certain CHMOD rules on "uploads" folder (see fig. 6 above). If you are experiencing this issue, please follow these steps to fix it:</p>
+					<ol>
+						<li>Make sure that theme installed strictly to "your_site/wp-content/themes/" folder.</li>
+						<li>The folder "your_site/wp-content/uploads" must be created. On some servers you'll need to set its CHMOD to 755, on others – to 777.</li>
+						<li>Please check the upload path is set to default (in Settings > Media or in wp-config.php).</li>
+					</ol>
+
+					<div class="alert alert-warning" role="alert"><p>If above steps did not yield any result, please don't hesitate to contact your hosting company support department. Since this is most likely a server-related problem, we will not be able to help you.</p></div>
+				</div>
+
+				<div id="404" class="subgroup">
+					<h3>404 error on some pages</h3>
+					<p>After theme activation, on some pages you can encounter the "404 Page not found" error. This is a simple one. In WordPress admin area, navigate to <strong>Settings > Permalinks</strong> and click the "Save Changes" button. This will update the ".htaccess" file to work with custom post types of The7 correctly.</p>
+				</div>
+			</section>
+
+			<section id="registration" class="group">
+				<h2>Theme Registration</h2>
+				<p>Immediately after theme activation you will be redirected to the My The7 page (fig. 7.1):</p>
+				<figure>
+					<img src="assets/images/dashboard.jpg" alt="My The7 page and theme registration">
+					<figcaption>Fig. 7.1 - My The7 page and theme registration.</figcaption>
+				</figure>
+				<div class="alert alert-warning" role="alert"><p>Pay attention to the "System Status" block and check if there are any critical issues with your WordPress instance. In case a critical issue is detected, The7 will display a suggestion on resolving it.</p></div>
+				<p>Use your purchase code to register the theme and get access to pre-made websites, premium plugins, one-click updates and more.</p>
+				<p>Note that in case you want to use your purchase code on other domain name (e.g. when you are moving a site from one domain to another) you'll need to de-register the theme first (fig. 7.2):</p>
+				<figure>
+					<img src="assets/images/deregister.jpg" alt="Theme de-registration">
+					<figcaption>Fig. 7.2 - Theme de-registration.</figcaption>
+				</figure>
+				<div class="alert alert-warning" role="alert"><p>Also note that running multiple websites on a single license is a copyright violation. In other words it is a serious legal offence and is strictly prohibited. Remember <strong>1 site = 1 purchased license</strong>.</p></div>
+			</section>
+
+			<section id="demo" class="group">
+				<h2>Pre-made Websites</h2>
+				<p>You can import pre-made websites (also called "demo websites", "demo content" or just "demos") via <strong>The7 > Pre-made Websites</strong> interface.</p>
+				<p>Each pre-made website has a list of import options (see fig. 8), which includes:</p>
+				<ul>
+					<li>required plugins (if some of required plugins were not yet installed);</li>
+					<li>website content (including menus, widget areas and homepage settings);</li>
+					<li>theme options (website design);</li>
+					<li>file attachments (images or image placeholders);</li>
+					<li>sliders.</li>
+				</ul>
+				<figure>
+					<img src="assets/images/demo.jpg" alt="Pre-made website import options">
+					<figcaption>Fig. 8 - Pre-made website import options.</figcaption>
+				</figure>
+				<div class="alert alert-warning" role="alert">
+					<p>Note that after pre-made website import, you will need to re-save WPBakery Page Builder design options under The7 WPBakery Page Builder > Design Options.</p>
+				</div>
+			</section>
+
+			<section id="plugins" class="group">
+				<h2>Plugins</h2>
+				<p>In case you have not installed plugins automatically, you can do it in <strong>The7 > Plugins</strong> interface. The same interface allows you to update plugins (fig. 9):</p>
+				<figure>
+					<img src="assets/images/plugins.jpg" alt="Plugins installation and update">
+					<figcaption>Fig. 9 - Plugins installation and update.</figcaption>
+				</figure>
+				<div class="alert alert-success" role="alert"><p>After installing the plugin, please don't forget to "Activate" it.</p></div>
+				<p>Bulk plugins installation / activation / update actions are also available. However note that this feature may not work correctly on some servers.</p>
+				<div class="alert alert-warning" role="alert">
+					<p><strong>The7 is designed to work best with WPBakery Page Builder (former Visual Composer)</strong> plugin. Though it is not required, we strongly recommend you to install and activate it. Otherwise you will not be able to take advantage of all The7 features.</p>
+					<p>Other recommended plugins are:</p>
+					<ul>
+						<li><strong>The7 Elements</strong> to enable post types and corresponding shortcodes like Portfolio, Albums etc. (don't forget to save your premalinks structure under Settings > Permalinks after activating this plugin);</li>
+						<li><strong>Ultimate Addons</strong> to enhance WPBakery Page Builder even further;</li>
+						<li><strong>Slider Revolution</strong> for sliders, slideshows, animated hero-images, etc.;</li>
+						<li><strong>WooCommerce</strong> if you're building a web shop.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="wizard" class="group">
+				<h2>Theme Options Wizard</h2>
+				<figure>
+					<img src="assets/images/wizard.jpg" alt="Theme Options Wizard">
+					<figcaption>Fig. 10 - Theme Options Wizard.</figcaption>
+				</figure>
+				<p><strong>To our best knowledge, The7 has the highest amount of settings to customize your website appearance in the entire industry</strong> up to date! Therefore, number of advanced settings in Theme Options can be a bit overwhelming at first. Especially if you have no experience with "multipurpose" WordPress themes.</p>
+				<p>Do not worry, we have your back cowered from first seconds of using The7 theme. You do not have to mess with all the settings to design your site. Simply use the <strong>Theme Options > Wizard</strong> interface!</p>
+				<p>Theme Options Wizard allows you to set up basic settings of site appearance, mobile and desktop headers, branding, sidebar, footer, background and text colors, etc. The Wizard will do the rest, intelligently calculating all other settings, so you can have your site professionally designed in mere minutes!</p>
+				<p>When the Wizard will do its work, if you wish, you can fine-tune every aspect of your site design in the corresponding section(s) of Theme Options.</p>
+				<div class="alert alert-success" role="alert"><p><strong>A word to professional web developers.</strong> Do not overlook the Wizard feature! It is an excellent design prototyping tool, that can potentially save you long hours of work in PhotoShop and cut development costs dramatically.</p></div>
+
+			</section>
+
+			<section id="white-label" class="group">
+				<h2>The7 White-Label Tool</h2>
+				<p>The7 allows you to change theme name, description, thumbnail and other information to better fit your business purposes. These changes will be preserved during theme and plugins updates.</p>
+				<p>In order to access the white-label tool, please locate <strong>"the7-white-label.zip"</strong> installable plugin file in "Developer Tools" folder of full theme package; install the plugin and activate it. <strong>Tools > The7 White-Label</strong> interface will become available upon plugin activation (fig. 11):</p>
+				<figure>
+					<img src="assets/images/white-label.jpg" alt="The7 White-Label Tool">
+					<figcaption>Fig. 11 - The7 White-Label Tool.</figcaption>
+				</figure>
+				<p>Apart from re-branding the theme in "Theme Branding" section, you can hide The7 menu, theme options and remove "The7" branding from plugins in "General" block.</p>
+				<div class="alert alert-success" role="alert">
+					<p>Note that changing theme name will result in "loss" of already existing theme options.</p>
+					<p><strong>DO NOT PANIC - you options are safe.</strong> Theme have simply switched to a theme options bank that corresponds with a new theme name.</p>
+					<p><strong>Enable the "Use The7 theme options" setting</strong> to make theme switch back to the original theme options bank.</p>
+				</div>
+				<p>After making changes to the theme branding, you can safely remove "The7 White-Label Tool" plugin - all your changes will be preserved. In case you want to make additional changes - simply install the plugin back again.</p>
+			</section>
+
+			<section id="next" class="group">
+				<h2>What's Next?</h2>
+				<p>Once you've read this Quick Start Guide, installed the theme and made yourself somewhat accustomed with it, you may want to read the <a href="http://guide.the7.io/" target="_blank">full user guide</a> available online. Though we hope (and believe), you'll rarely need it.</p>
+				<p>If you encounter any issues, you can use <a href="http://support.dream-theme.com/Troubleshooter/" target="_blank">Troubleshooter</a> and <a href="http://support.dream-theme.com/knowledgebase/" target="_blank">Knowledge Base</a> at our <a href="http://support.dream-theme.com/" target="_blank">Support Portal</a>.</p>
+				<p>If you feel that you cannot resolve the issue yourself or need to ask something about theme feature(s), please do not hesitate to submit a support request via our <a href="http://support.dream-theme.com/" target="_blank">online Help-Desk</a>. (Make sure that you've read our support policy on <a href="http://support.dream-theme.com/support-policy/" target="_blank">this page</a>.)</p>
+				<p>And, of course, you can grab another copy of The7 for your upcoming projects <a href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590?ref=Dream-Theme" target="_blank">here on ThemeForest</a>.</p> 
+				
+
+				<p>&nbsp;</p>
+
+				<p><em>We hope you will enjoy working with The7 <br>and it will be a great help in all your endeavors online!<br>
+				Yours sincerely, Dream-Theme.</em></p>
+			</section>
+		</div>
+		<!--Nav Bar -->
+		<nav class="col-xs-3 bs-docs-sidebar" role="complementary">
+			<ul class="nav nav-stacked">
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#before">Before Getting Started</a></li>
+				<li>
+					<a href="#theme">Theme Installation</a>
+					<ul class="nav nav-stacked">
+						<li><a href="#theme">Basics</a></li>
+						<li><a href="#admin">WordPress uploader</a></li>
+						<li><a href="#cpanel">cPanel</a></li>
+						<li><a href="#ftp">FTP</a></li>
+						<li><a href="#activate">Activate The7</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#troubleshooting">Troubleshooting</a>
+					<ul class="nav nav-stacked">
+						<li><a href="#cannot-upload">Cannot upload the theme</a></li>
+						<li><a href="#missing">Missing the style.css</a></li>
+						<li><a href="#blank">Blank page / allowed memory error</a></li>
+						<li><a href="#chmod">Failed to create customization .CSS file</a></li>
+						<li><a href="#404">404 error on some pages</a></li>
+					</ul>
+				</li>
+				<li><a href="#registration">Theme Registration</a></li>
+				<li><a href="#demo">Pre-made Websites</a></li>
+				<li><a href="#plugins">Plugins</a></li>
+				<li><a href="#wizard">Theme Options Wizard</a></li>
+				<li><a href="#white-label">The7 White-Label Tool</a></li>
+				<li><a href="#next">What's Next?</a></li>
+			</ul>
+		</nav>	
+	</div>
+</div>
+
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+jQuery(function($){
+	$("body").scrollspy({
+		target: ".bs-docs-sidebar",
+		offset: 40
+	});
+
+	$(".bs-docs-sidebar > .nav").affix({
+		offset: {
+			top: 40
+		}
+	});
+});
+</script>
+</body>
+</html>

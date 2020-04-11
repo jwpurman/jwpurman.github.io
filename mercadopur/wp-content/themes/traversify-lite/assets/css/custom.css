@@ -1,0 +1,9 @@
+.listing-cat-grid .listing-cat-wrap {
+    margin: 0;
+}
+.listing-cat-grid .row {
+    margin-bottom: 30px;
+}
+.listing-cat-grid .row:last-child {
+    margin-bottom: 0;
+}
